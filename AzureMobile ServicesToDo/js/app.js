@@ -1,6 +1,6 @@
 document.addEventListener("deviceready", onDeviceReady, false);
 
-// PhoneGap is ready
+// Icenium is ready
 //
 function onDeviceReady() {
     XMLHttpRequest.prototype.withCredentials = false;
@@ -14,10 +14,8 @@ function onDeviceReady() {
             navigator.notification.alert('Error: ' + e.description);
         }
 
-        //navigator.notification.alert('client:');
-
         // Read current data and rebuild UI.
-        // If you plan to generate com:plex UIs like this, consider using a JavaScript templating library.
+        // If you plan to generate complex UIs like this, consider using a JavaScript templating library.
         function refreshTodoItems() {
             var query = todoItemTable.where({ complete: false });
 
