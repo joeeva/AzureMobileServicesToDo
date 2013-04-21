@@ -7,7 +7,7 @@ function onDeviceReady() {
     $(function () {
         //navigator.notification.alert('function');
         try {
-            var client = new WindowsAzure.MobileServiceClient('https://todowoodruff.azure-mobile.net/', 'MvPJDDUUkVtNBaqaFrbkroWzFUVLam17'),
+            var client = new WindowsAzure.MobileServiceClient('https://<app name>.azure-mobile.net/', '<app key>'),
             todoItemTable = client.getTable('todoitem');
         }
         catch (e) {
