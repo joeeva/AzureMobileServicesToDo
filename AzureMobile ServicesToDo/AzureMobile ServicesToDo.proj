@@ -57,9 +57,9 @@
     <Resource Include="App_Resources\Android\drawable-nodpi\splashscreen.9.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\style.css" />
     <Content Include="index.html" />
-    <Content Include="css\index.css" />
-    <Content Include="js\index.js" />
+    <Content Include="js\app.js" />
     <Content Include="img\logo.png" />
     <Content Include="img\cordova.png" />
     <Content Include="cordova.ios.js">
