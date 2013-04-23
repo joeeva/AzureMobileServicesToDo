@@ -1,41 +1,52 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Sample: get started with data</title>
-    <meta name='viewport' content='width=device-width' />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="format-detection" content="telephone=no" />
-<!--    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
--->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-   
-    <script type="text/javascript" src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.9.1.min.js'></script>
-    <script type="text/javascript" src='https://todowoodruff.azure-mobile.net/client/MobileServices.Web-1.0.0.min.js'></script>
-    <script type="text/javascript" src="cordova-2.5.0.js"></script>
-    <script type="text/javascript" charset="utf-8" src='js/app.js'></script>
- 
-</head>
-<body>
-    <div id='wrapper'>
-        <article>
-                <header>
-                    <h2>Windows Azure</h2>
-                    <h1>Mobile Services</h1>
+	<head>
+		<title>Sample: get started with data</title>
+		<meta name='viewport' content='width=device-width' />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="format-detection" content="telephone=no" />
+		<!--    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+		-->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
 
-                    <form id='add-item'>
-                        <button type='submit'>Add</button>
-                        <div><input type='text' id='new-item-text' placeholder='Enter new task' /></div>
-                    </form>
-                </header>
+		<script type="text/javascript" src='js/jquery-1.9.1.min.js'></script>
+		<script type="text/javascript" src='js/MobileServices.Web-1.min.js'></script>
+		<script type="text/javascript" src="cordova-2.5.0.js"></script>
+		<script type="text/javascript" charset="utf-8" src='js/app.js'></script>
 
-                <ul id='todo-items'></ul>
-                <p id='summary'>Loading...</p>
-            </article>
-        <footer>
-                <a href='http://www.windowsazure.com/en-us/develop/mobile/'>
-                    Learn more about Windows Azure Mobile Services
-                </a>
-            </footer>
-    </div>
-</body>
+	</head>
+	<body>
+		<div id='wrapper'>
+			<article>
+				<header>
+					<h2>Windows Azure</h2>
+					<h1>Mobile Services</h1>
+
+					<!--<div id="logged-in">
+						You are logged in as <span id="login-name"></span>.
+						<button id="log-out">Log out</button>
+					</div>
+					<div id="logged-out">
+						You are not logged in.
+						<button>Log in</button>
+					</div>-->
+
+					<form id='add-item'>
+						<button type='submit'>Add</button>
+						<div>
+							<input type='text' id='new-item-text' placeholder='Enter new task' />
+						</div>
+					</form>
+				</header>
+
+				<ul id='todo-items'></ul>
+				<p id='summary'>Loading...</p>
+			</article>
+			<footer>
+				<a href='http://www.windowsazure.com/en-us/develop/mobile/'>
+					Learn more about Windows Azure Mobile Services
+				</a>
+			</footer>
+		</div>
+	</body>
 </html>
