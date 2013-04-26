@@ -1,11 +1,9 @@
 document.addEventListener("deviceready", onDeviceReady, false);
 
-// Icenium is ready
-//
+// The device is ready
 function onDeviceReady() {
 	XMLHttpRequest.prototype.withCredentials = false;
 	$(function () {
-		//navigator.notification.alert('function');
 		try {
 			var client = new WindowsAzure.MobileServiceClient('https://todowoodruff.azure-mobile.net/', 'MvPJDDUUkVtNBaqaFrbkroWzFUVLam17'),
 			todoItemTable = client.getTable('todoitem');
@@ -15,7 +13,6 @@ function onDeviceReady() {
 		}
 
 		// Read current data and rebuild UI.
-		// If you plan to generate complex UIs like this, consider using a JavaScript templating library.
 		function refreshTodoItems() {
 			var query = todoItemTable.where({ complete: false });
 
@@ -65,9 +62,9 @@ function onDeviceReady() {
 		});
 
 		// On initial load, start by fetching the current data
-		refreshTodoItems();
+		//refreshTodoItems();
         
-		/*function refreshAuthDisplay() {
+		function refreshAuthDisplay() {
 			var isLoggedIn = client.currentUser !== null;
 			$("#logged-in").toggle(isLoggedIn);
 			$("#logged-out").toggle(!isLoggedIn);
@@ -96,6 +93,6 @@ function onDeviceReady() {
 			$('#summary').html('<strong>You must login to access data.</strong>');          
 			$("#logged-out button").click(logIn);
 			$("#logged-in button").click(logOut);
-		});*/
+		});
 	});
 }
